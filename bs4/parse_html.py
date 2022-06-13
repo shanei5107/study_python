@@ -12,12 +12,17 @@ html_doc = """
 """
 soup = BeautifulSoup(html_doc, 'html.parser')
 print(soup.prettify())
-print(soup.title)
-print(soup.title.string)
-print(soup.p)
-print(soup.p['class'])
-print(soup.a)
-print(soup.find_all('a'))
+# print(soup.title)
+# print(soup.title.string)
+# print(soup.p)
+# print(soup.p['class'])
+# print(soup.a)
+# print(soup.find_all('a'))
 
-for link in soup.find_all('a'):
-    print(link.get('href'))
+# for link in soup.find_all('a'):
+#     print(link.get('href'))
+
+body_tag = soup.body
+print(body_tag)
+print('\n\n')
+print(body_tag.contents)
