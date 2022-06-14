@@ -52,6 +52,7 @@ class WallpaperSpider(object):
         解析提取数据
         '''
         html = self.get_html(url)
+        print(html)
         if html:
             pass
 
